@@ -1,0 +1,32 @@
+.removeCard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.selectRemove {
+    height: 50px;
+}
+
+.selectRemove select{
+    height: 50px;
+    font-size: 15px;
+    background-color: rgb(221, 221, 212);
+    border: none;
+    border-bottom: 2px solid #000;
+}
+
+.removeButton {
+    width: 150px;
+    height: 70px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+
+.removeButton:hover {
+    background-color: rgb(179, 0, 0);
+}

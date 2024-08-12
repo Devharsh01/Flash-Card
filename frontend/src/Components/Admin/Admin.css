@@ -1,0 +1,38 @@
+.admin {
+    display: flex;
+    margin-top: 90px;
+    color: white;
+    width: 100vw;
+}
+
+.sideBar {
+    display: flex;
+    width: 15%;
+    gap: 20px;
+    padding-left: 15px;
+    flex-direction: column;
+}
+
+.sideBar div{
+    font-size: 22px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.selected {
+    background: rgb(14, 36, 160);
+}
+
+.mainPage {
+    margin-left: 30px;
+    padding-left: 20px;
+    width: 81%;
+    height: 90vh;
+    background-color: rgb(240, 240, 240);
+    color: black;
+}

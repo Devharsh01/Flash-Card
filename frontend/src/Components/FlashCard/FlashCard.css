@@ -1,0 +1,93 @@
+.card {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.cardButton {
+    width: 20%;
+    height: 20%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.cardButton img{
+    width: 100%;
+    height: auto;
+}
+
+.cardButton p {
+    color: rgb(172, 172, 172);
+    transition: all 0.5s ease-in-out;
+    font-size: 17px;
+    margin: 0;
+    animation: none;
+    opacity: 0;
+}
+
+.cardButton:hover p {
+    opacity: 1;
+}
+
+#next {                             /*Image Rotates 180deg*/
+    transform: rotateY(180deg);
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 40%;
+    height: 100%;
+    perspective: 1000px;
+    font-family: sans-serif;
+    border-radius: 1rem;
+}
+  
+.title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: all 0.8s;
+    transform-style: preserve-3d;
+    
+}
+
+.flip-card-inner p{
+    animation: none;
+}
+
+.flipped{
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid coral;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    padding: 5px;
+}
+  
+.flip-card-back {
+    transform: rotateY(180deg);
+}

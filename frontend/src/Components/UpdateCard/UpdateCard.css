@@ -1,0 +1,30 @@
+.updateCard {
+    height: 50px;
+}
+
+.updateValue select, .updateValue input{
+    height: 40px;
+    font-size: 14px;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-bottom: 2px solid #000;
+}
+
+
+.updateButton {
+    margin-top: 20px;
+    width: 200px;
+    height: 70px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+
+.updateOption {
+    font-size: 17px;
+}
+

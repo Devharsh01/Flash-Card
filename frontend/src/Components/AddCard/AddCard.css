@@ -1,0 +1,31 @@
+.addCard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.addCard h2{
+    margin: 0;
+    font-size: 28px;
+}
+
+.addCard input {
+    height: 40px;
+    width: 500px;
+}
+
+.addCardButton {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    background: red;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.addCardButton:hover {
+    background-color: rgb(155, 0, 0);
+}

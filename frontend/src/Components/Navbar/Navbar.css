@@ -1,0 +1,32 @@
+.navbar {
+    width: 100vw;
+    padding-top: 30px;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+}
+
+.navHeading {
+    gap: 20px;
+    font-size: 1.8rem;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.navHeading div {
+    cursor: pointer;
+}
+
+.navHeading p { 
+    margin: 0;
+}
+
+.navHeading hr {                            /*Underline CSS*/
+    margin: 0;
+    height: 1.8px;
+    background-color: #fff;
+    border-radius: 8px;
+}

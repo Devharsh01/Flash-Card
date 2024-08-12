@@ -1,0 +1,49 @@
+.adminPanel{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.adminPage {
+    background: #2c2c2c;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adminLogin {
+    position: fixed;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgb(209, 209, 209);
+}
+
+.adminLogin div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+}
+
+.adminLogin p{
+    margin: 0;
+    padding: 5px 0px;
+}
+
+.loginButton{
+    margin-top: 20px;
+    height: 3rem;
+    width: 5rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+
+.loginButton:hover{
+    background-color: rgb(156, 0, 0);
+}
