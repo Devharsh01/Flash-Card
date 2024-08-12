@@ -12,9 +12,12 @@ const port = process.env.PORT || 3000; // Use 3000 or any other port
 const db = new Client({
     user: process.env.USER,
     host: process.env.HOST,
-    database: process.env.DATABASE, // Ensure you specify the database
+    database: process.env.DATABASE,
     password: process.env.PASSWORD,
-    port: process.env.DB_PORT, 
+    port: process.env.PORT,
+    ssl: {
+        rejectUnauthorized: false // Set to true to enforce SSL certificate validation
+    }
 });
 
 db.connect()
