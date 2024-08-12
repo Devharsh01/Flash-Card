@@ -2,22 +2,15 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 require('dotenv').config();
-const { Client } = require('pg'); 
+const { Pool } = require('pg'); 
 
 app.use(express.json());
 app.use(cors());
 
 const port = process.env.PORT || 3000; // Use 3000 or any other port
 
-const db = new Client({
-    user: process.env.USER,
-    host: process.env.HOST,
-    database: process.env.DATABASE,
-    password: process.env.PASSWORD,
-    port: process.env.PORT,
-    ssl: {
-        rejectUnauthorized: false // Set to true to enforce SSL certificate validation
-    }
+const db = new Pool({
+    connectionString: process.env.POSTGRES_URL
 });
 
 db.connect()
