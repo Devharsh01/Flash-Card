@@ -3,7 +3,8 @@ export const FlashCardContext = createContext();
 
 const FlashCardContextProvider = (props) => {
     const [allData, setAllData] = useState([]);
-    let url = `http://localhost:3000`
+    //http://localhost:3000
+    let url = `https://flash-card-backend-o1qz.onrender.com`
 
     useEffect(()=>{
         fetch(`${url}/alldata`)
